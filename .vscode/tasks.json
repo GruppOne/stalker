@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Pull submodule changes recursively",
+      "type": "shell",
+      "command": "git pull --recurse-submodules",
+      "problemMatcher": []
+    },
+  ]
+}

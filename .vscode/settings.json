@@ -1,0 +1,10 @@
+{
+  // Do not show submodules in source control view.
+  "git.ignoredRepositories": [
+    "docs",
+    "mobile-app",
+    "server",
+    "web-app"
+  ],
+  "task.autoDetect": "off"
+}

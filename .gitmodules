@@ -1,0 +1,16 @@
+[submodule "docs"]
+	path = docs
+	url = https://github.com/GruppOne/project-docs.git
+	branch = master
+[submodule "mobile-app"]
+	path = mobile-app
+	url = https://github.com/GruppOne/stalker-mobile-app.git
+	branch = master
+[submodule "server"]
+	path = server
+	url = https://github.com/GruppOne/stalker-server.git
+	branch = master
+[submodule "web-app"]
+	path = web-app
+	url = https://github.com/GruppOne/stalker-web-app.git
+	branch = master
