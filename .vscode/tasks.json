@@ -2,9 +2,16 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Pull submodule changes recursively",
+      "label": "Pull all submodule changes recursively",
       "type": "shell",
-      "command": "git pull --recurse-submodules",
+      "command": "git pull --autostash --recurse-submodules",
+      "problemMatcher": []
+    },
+    {
+      "label": "Pull submodule",
+      "detail": "",
+      "type": "shell",
+      "command": "git submodule update --remote",
       "problemMatcher": []
     },
   ]
