@@ -27,12 +27,7 @@ Alcune configurazioni utili per gestire un repository con dei submodule:
 
 ### Mobile App
 
-- Posizionarsi da linea di comando nella cartella web-app
-- eseguire `npm install` per aggiornare le dipende del package
-- per eseguire una versione locale della web-app scrivere `ng serve -o`
-- per eseguire i test di unità e ottenere il report della code coverage scrivere `ng test --code-coverage`
-- per eseguire i test di sistema scrivere `ng e2e`
-- attualmente sono visitabili i path `/login`, `/organization`, `/editorganization` che implementano i casi d'uso AUC1, AUC3.3 e AUC4 nei sottocasi 4.1 e 4.3
+La mobile app è sviluppata con Intellij IDEA Coomunity 2019.3; richiede che nel sistema sia presente l'Android SDK, che esso sia configurato per la build di applicazioni per Android 9 (API Level 28), e che l'IDE sia configurato per riconoscerlo. Per l'esecuzione è necessario un dispositivo, fisico (che deve essere configurato per il debugging USB e connesso al computer via USB) oppure virtuale (gestito da AVD, parte dell'Android SDK). Nel caso dell'esecuzione su dispositivo fisico, è necessario inoltre modificare l'URL del server (nel file app/src/main/java/com/gruppone/stalker/WebSingleton.java) perchè si riferisca al server in esecuzione. Successivamente, è sufficiente utilizzare i comandi di build o run integrati nell'IDE.
 
 ### Server
 
@@ -44,4 +39,9 @@ Posizionarsi nella radice del server ed eseguire `./gradlew bootRun`. Gli endpoi
 
 ### Web App
 
-<!-- TODO scrivere come si avvia e come si testa Web App -->
+- Posizionarsi da linea di comando nella cartella web-app
+- eseguire `npm install` per aggiornare le dipende del package
+- per eseguire una versione locale della web-app scrivere `ng serve -o`
+- per eseguire i test di unità e ottenere il report della code coverage scrivere `ng test --code-coverage`
+- per eseguire i test di sistema scrivere `ng e2e`
+- attualmente sono visitabili i path `/login`, `/organization`, `/editorganization` che implementano i casi d'uso AUC1, AUC3.3 e AUC4 nei sottocasi 4.1 e 4.3
