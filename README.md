@@ -21,9 +21,9 @@ Alcune configurazioni utili per gestire un repository con dei submodule:
 
 ## Componenti
 
-- L'attuale versione del componente mobile-app è `0.5.2`
-- L'attuale versione del componente server è `0.3.0`
-- L'attuale versione del componente web-app è `0.6.0`
+- L'attuale versione del componente mobile-app è `0.5.2`.
+- L'attuale versione del componente server è `0.3.0`.
+- L'attuale versione del componente web-app è `0.6.0`.
 
 ### Mobile App
 
@@ -31,7 +31,11 @@ Alcune configurazioni utili per gestire un repository con dei submodule:
 
 ### Server
 
-<!-- TODO scrivere come si avvia e come si testa Server -->
+Posizionarsi nella radice del server ed eseguire `./gradlew bootRun`. Gli endpoint definiti sono disponibili agli indirizzi:
+
+- localhost:11111/version
+- localhost:11111/organizations
+- localhost:11111/organizations/{id} (1 e 2 ritornano OK)
 
 ### Web App
 
