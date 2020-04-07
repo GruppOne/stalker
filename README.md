@@ -27,7 +27,12 @@ Alcune configurazioni utili per gestire un repository con dei submodule:
 
 ### Mobile App
 
-<!-- TODO scrivere come si avvia e come si testa la mobile app -->
+- Posizionarsi da linea di comando nella cartella web-app
+- eseguire `npm install` per aggiornare le dipende del package
+- per eseguire una versione locale della web-app scrivere `ng serve -o`
+- per eseguire i test di unità e ottenere il report della code coverage scrivere `ng test --code-coverage`
+- per eseguire i test di sistema scrivere `ng e2e`
+- attualmente sono visitabili i path `/login`, `/organization`, `/editorganization` che implementano i casi d'uso AUC1, AUC3.3 e AUC4 nei sottocasi 4.1 e 4.3
 
 ### Server
 
