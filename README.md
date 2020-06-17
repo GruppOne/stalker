@@ -1,8 +1,5 @@
 # GruppOne - Stalker
 
-<!-- TODO scrivere versione di prodotto (è la STESSA della documentazione) -->
-<!-- L'attuale versione del prodotto stalker è `` -->
-
 ## Come utilizzare questo repository
 
 Per inizializzare tutti i submodule, clonare il repository utilizzando il comando
@@ -21,9 +18,9 @@ Alcune configurazioni utili per gestire un repository con dei submodule:
 
 ## Componenti
 
-- L'attuale versione del componente mobile-app è `0.5.2`.
-- L'attuale versione del componente server è `0.3.0`.
-- L'attuale versione del componente web-app è `0.6.0`.
+- L'attuale versione del componente mobile-app è `1.0.0`.
+- L'attuale versione del componente server è `1.0.0`.
+- L'attuale versione del componente web-app è `1.0.0`.
 
 ### Mobile App
 
@@ -31,7 +28,7 @@ La mobile app è sviluppata con IntelliJ IDEA Community 2019.3; richiede che nel
 
 Per l'esecuzione è necessario un dispositivo, fisico (che deve essere configurato per il debugging USB e connesso al computer via USB) oppure virtuale (gestito da AVD, parte dell'Android SDK).
 
-Nel caso dell'esecuzione su dispositivo fisico, è necessario inoltre modificare l'URL del server (nel file `app/src/main/java/com/gruppone/stalker/WebSingleton.java`) affinché si riferisca al server in esecuzione.
+Nel caso dell'esecuzione su dispositivo fisico, è necessario inoltre modificare l'URL del server nel file .env affinché si riferisca al server in esecuzione.
 
 Successivamente, è sufficiente utilizzare i comandi di build o run integrati nell'IDE.
 
@@ -40,12 +37,6 @@ Successivamente, è sufficiente utilizzare i comandi di build o run integrati ne
 Il server è sviluppato con IntelliJ IDEA Community 2019.3 utilizzando `JDK 11`, Spring Boot e Spring WebFlux.
 
 Per eseguire l'applicazione in ambiente di sviluppo è sufficiente posizionarsi nella radice del server ed eseguire da terminale `./gradlew bootRun`, o i comandi equivalenti forniti dall'IDE.
-
-Gli endpoint definiti nel trunk (branch `master`) sono disponibili agli indirizzi:
-
-- <http://localhost:11111/version>
-- <http://localhost:11111/organizations>
-- <http://localhost:11111/organizations/{id}> (solo gli id 1 e 2 ritornano OK)
 
 I database che utilizziamo sono gestibili attraverso docker-compose (InfluxDB e MySQL).
 
