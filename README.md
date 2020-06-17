@@ -43,8 +43,6 @@ I database che utilizziamo sono gestibili attraverso docker-compose (InfluxDB e 
 - Per far partire l'istanza di MySQL, eseguire `docker-compose up [-d] rdb`.
 - Per far partire l'istanza di InfluxDB, eseguire `docker-compose up [-d] tsdb`.
 
-Le connessioni tra server e DB sono configurate solo all'interno delle branch dedicate, rispettivamente `add-relational-database` e `add-timeseries-database`.
-
 ### Web App
 
 La web app è sviluppata con l'editor VSCode e il framework Angular 9.
