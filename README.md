@@ -52,7 +52,6 @@ La web app è sviluppata con l'editor VSCode e il framework Angular 9.
 - Per eseguire una versione locale della web-app scrivere `ng serve --open`.
 - Per eseguire i test di unità e ottenere il report della code coverage scrivere `ng test --code-coverage`.
 - Per eseguire i test di sistema scrivere `ng e2e`.
-- Attualmente sono visitabili i path `/login`, `/organization`, `/editorganization` che implementano i casi d'uso AUC1, AUC3.3 e AUC4 nei sotto-casi 4.1 e 4.3.
 
 È possibile effettuare una build che produce un container production-ready posizionandosi nella cartella web-app e utilizzando il comando `docker build -t "gruppone/stalker-web-app"` e quindi `docker run -it --rm -p 80:80 --name stalker-web-app gruppone/stalker-web-app`.
 
